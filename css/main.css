@@ -1,0 +1,31 @@
+.flex-caption {
+    /* background: rgba(0, 102, 51, 0.6); */
+    color: rgb(0, 0, 0);
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+    font-size: 6rem;
+    line-height: 5.5rem;
+    position: absolute;
+    top: 0;
+    padding: 5.3rem 1rem;
+    display: block;
+    width: auto;
+}
+
+.navbar-default {
+    background-color: #2C814D;
+    border: none;
+}
+
+.secondary-navigation {
+    background-color: #006633;
+    color: rgb(255, 255, 255);
+}
+
+.top_nav {
+    max-width: 960px;
+    width: 100%;
+}
+
+.carousel-header {
+    font-size: 2rem;
+}
