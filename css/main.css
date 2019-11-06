@@ -1,14 +1,27 @@
 .flex-caption {
-    /* background: rgba(0, 102, 51, 0.6); */
-    color: rgb(0, 0, 0);
+    background: rgba(0, 102, 51, 0.6);
+    color: rgb(255, 255, 255);
     text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
-    font-size: 6rem;
-    line-height: 5.5rem;
+    font-size: 3rem;
+    line-height: 4.3rem;
     position: absolute;
     top: 0;
-    padding: 5.3rem 0.6rem;
+    padding: 2rem 1.5rem;
     display: block;
-    width: auto;
+    margin: 27rem 0 0 74rem
+}
+
+.panel {
+    background: #E5E5E7
+}
+
+.panel-title {
+    font-size: 1.5rem;
+}
+
+.top_nav {
+    max-width: 960px;
+    width: 100%;
 }
 
 .navbar-default {
@@ -21,11 +34,27 @@
     color: rgb(255, 255, 255);
 }
 
-.top_nav {
-    max-width: 960px;
-    width: 100%;
+.banner {
+    padding: 0rem
+}
+
+.section-grey {
+    background-color: #333;
+    color: #fff;
+    display: block;
+}
+
+.carousel .carousel-control {
+    visibility: hidden; 
+}
+.carousel:hover .carousel-control {
+    visibility: visible; 
 }
 
 .carousel-header {
     font-size: 2rem;
+}
+
+.footer {
+    background: #101010;
 }
