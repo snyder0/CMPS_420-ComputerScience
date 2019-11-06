@@ -1,14 +1,54 @@
 .flex-caption {
     background: rgba(0, 102, 51, 0.6);
     color: rgb(255, 255, 255);
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
     font-size: 3rem;
     line-height: 4.3rem;
     position: absolute;
     top: 0;
     padding: 2rem 1.5rem;
     display: block;
-    margin: 27rem 0 0 74rem
+    margin: 24rem 0 0 74rem
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/virtual-reality.jpg');
+    /* Full height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url('../images/International-Student.jpg');
+    /* Full height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('../images/Computer_Systems_Analyst.jpg');
+    /* Full height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-grid {
+    padding: 0px;
 }
 
 .panel {
@@ -45,10 +85,11 @@
 }
 
 .carousel .carousel-control {
-    visibility: hidden; 
+    visibility: hidden;
 }
+
 .carousel:hover .carousel-control {
-    visibility: visible; 
+    visibility: visible;
 }
 
 .carousel-header {
@@ -56,5 +97,6 @@
 }
 
 .footer {
-    background: #101010;
+    background: #464646;
+    color: white;
 }

@@ -15,7 +15,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default"><a name="topOfPage"></a>
+    <nav class="navbar navbar-default">
+        <a name="topOfPage"></a>
         <div class="container-fluid">
             <div class="row">
                 <div class="navbar-header col align-self-start">
@@ -56,8 +57,16 @@
                 <div id="carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./images/header-tablet.jpg" class="img-fluid d-block w-100" height="443" alt="...">
+                            <!-- <img src="./images/header-tablet.jpg" class="img-fluid d-block w-100" height="443"
+                                alt="..."> -->
+                            <div class="parallax"></div>
                         </div>
+                        <div class="carousel-item">
+                            <div class="parallax1"></div>
+                        </div>
+                        <div class="carousel-item">
+                                <div class="parallax2"></div>
+                            </div>
                         <div class="flex-caption col-sm-5 h-25">
                             <div id="typed-strings">
                                 <p>Welcome to Computer Science!</p>
@@ -72,20 +81,20 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 mt-3 panel">
+            <div class="col-sm-4 mt-5 panel">
                 <h2 class="panel-title">Contact Information</h2>
-                <p>Department of Computer Science 
-                        Computer Science and Tech Building, Room 3038
-                        SLU Box 10847
-                        Hammond, LA 70402</p>
+                <p>Department of Computer Science
+                    Computer Science and Tech Building, Room 3038
+                    SLU Box 10847
+                    Hammond, LA 70402</p>
                 <p>Tel: 985-549-5740
-                        Fax: 985-549-5532</p>
+                    Fax: 985-549-5532</p>
                 <p>Interim Department Head
-                        Dr. Brian I Crother
-                        bcrother@southeastern.edu</p>
+                    Dr. Brian I Crother
+                    bcrother@southeastern.edu</p>
 
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-8 mt-5">
                 <h1>Computer Science</h1>
 
                 <p>The Department of Computer Science at Southeastern Louisiana University is committed
@@ -123,6 +132,26 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid banner mt-5">
+        <div class="col-sm-12">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 img-grid">
+                    <img src="./images/current-students-international.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-sm-4 img-grid">
+                    <img src="./images/students.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-sm-4 img-grid">
+                    <img src="./images/Hack-a-Thon.png" class="img-fluid" alt="...">
+                </div>
+                <!-- <div class="col-sm-3 img-grid">
+                    <img src="./images/college-student.jpg" class="img-fluid" alt="..."/college-student.jpg
+                </div> -->
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 footer">
@@ -145,6 +174,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="/path/to/parallax.js"></script>
     <script>
         var typed = new Typed('#typed', {
             stringsElement: '#typed-strings',
@@ -153,7 +183,10 @@
             backDelay: 700,
             //loop: true,
         });
+
+        $('.parallax-window').parallax({ imageSrc: './images/header-tablet.jpg' });
     </script>
+
 </body>
 
 </html>
