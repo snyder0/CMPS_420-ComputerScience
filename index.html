@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/main.css">
 
     <title>Computer Science</title>
+    <button onclick="resizeText(2)" >Increase Text</button>
+    <button onclick="resizeText(-2)" > Decrease Text</button>
 </head>
 
 <body>
@@ -254,6 +256,13 @@
         });
 
         $('.parallax-window').parallax({ imageSrc: './images/header-tablet.jpg' });
+
+        function resizeText(multiplier) {
+            if (document.body.style.fontSize == "") {
+                document.body.style.fontSize = "1.0em";
+            }
+            document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+        }
     </script>
 
 </body>
