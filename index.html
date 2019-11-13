@@ -230,7 +230,7 @@
 
         <div class="row">
                 <p class="col-sm-3" id="baby">
-                        <input type="button" onclick="returnPictureAddress(0)" value="Ryan's Button"></input>
+                        <input type="button" onclick="pictureChange('WhitePeople')" value="Ryan's Button"></input>
                 </p>
             </div>
     </div>
@@ -304,20 +304,31 @@
             }
             document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
         }
-        var WhiteGuysWithGlasses = [
-            "images/success_header.jpg",
-            "images/virtual-reality.jpg",
-            "images/itstudents3.jpg"
-        ]
         function returnPictureAddress(arrayNumber){
             //document.write('<img src="images/success_header.jpg" class="img-fluid" alt="...">');
-            pictureChange("WhitePeople");
+            //pictureChange("WhitePeople");
             document.getElementById("baby").innerHTML = '<img src="images/success_header.jpg" class="img-fluid" alt="...">';
             //return WhiteGuysWithGlasses[arrayNumber];
         }
+
         function pictureChange(type){
+            var defaultArray = [
+                ["images/virtual-reality.jpg", "White Guys"],
+                ["images/itstudents3.jpg", "Other White Guys"]
+            ];
+            var WhiteGuysWithGlasses = [
+                ["images/success_header.jpg", "White Guy"],
+                ["images/virtual-reality.jpg", "White Guys"],
+                ["images/itstudents3.jpg", "Other White Guys"]
+            ];
             switch(type) {
                 case "WhitePeople":
+                    console.log(defaultArray[0]);
+                    //for(var i = 0; i < defaultArray.length; i++){
+                        defaultArray[0] = WhiteGuysWithGlasses[0];
+                        pictureLoad(defaultArray);
+                    console.log(defaultArray[0]);
+                    //}
                     //WhiteGuysWithGlasses
                     break;
                 case "BlackPeople":
@@ -336,8 +347,18 @@
 
             }
         }
+
+        function pictureLoad(defaultArray){
+            var imageLocation = defaultArray[0][0];
+            var imageAltText = defaultArray[0][1];
+            document.getElementById("baby").innerHTML = '<img src="' + imageLocation + '" class="img-fluid" alt="' + imageAltText + '">';
+        }
         window.onload = function () {
-            returnPictureAddress(0);
+            var defaultArray = [
+                ["images/virtual-reality.jpg", "White Guys"],
+                ["images/itstudents3.jpg", "Other White Guys"]
+            ];
+            pictureLoad(defaultArray);
         }
     </script>
 
