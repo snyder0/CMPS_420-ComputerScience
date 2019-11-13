@@ -221,12 +221,15 @@
                 <img src="./images/faculty/yang.jpg" class="img-fluid" alt="...">
             </div>
         </div>
+
         <div class="row">
-            <div class="col-sm-3">
-                <img src="returnPictureAddress(0);" class="img-fluid" alt="...">
+            <div class="col-sm-3" id="picture0">text
+            </div>
+            <div class="col-sm-3" id="picture1">is
+            </div>
+            <div class="col-sm-3" id="picture2">cool
             </div>
         </div>
-
 
         <div class="row">
                 <p class="col-sm-3" id="baby">
@@ -275,19 +278,6 @@
     
     
     <script>
-        //document.getElementById("baby").innerHTML = getRandomImage();
-        function getRandomImage() {
-            alert("Called");
-            return WhiteGuysWithGlasses[0];
-            
-        }
-
-
-
-
-
-
-
         var typed = new Typed('#typed', {
             stringsElement: '#typed-strings',
             typeSpeed: 100,
@@ -311,10 +301,13 @@
             //return WhiteGuysWithGlasses[arrayNumber];
         }
 
+        //Is used to change array that holds the pictures
         function pictureChange(type){
             var defaultArray = [
                 ["images/virtual-reality.jpg", "White Guys"],
-                ["images/itstudents3.jpg", "Other White Guys"]
+                ["images/success_header.jpg", "White Guy"],
+                ["images/itstudents3.jpg", "Other White Guys"],
+
             ];
             var WhiteGuysWithGlasses = [
                 ["images/success_header.jpg", "White Guy"],
@@ -323,12 +316,12 @@
             ];
             switch(type) {
                 case "WhitePeople":
-                    console.log(defaultArray[0]);
-                    //for(var i = 0; i < defaultArray.length; i++){
-                        defaultArray[0] = WhiteGuysWithGlasses[0];
+                    //console.log(defaultArray[0]);
+                    for(var i = 0; i < defaultArray.length; i++){
+                        defaultArray[i] = WhiteGuysWithGlasses[i];
                         pictureLoad(defaultArray);
-                    console.log(defaultArray[0]);
-                    //}
+                    console.log(defaultArray[i]);
+                    }
                     //WhiteGuysWithGlasses
                     break;
                 case "BlackPeople":
@@ -347,18 +340,13 @@
 
             }
         }
-
+        //Is used to load the pictures
         function pictureLoad(defaultArray){
-            var imageLocation = defaultArray[0][0];
-            var imageAltText = defaultArray[0][1];
-            document.getElementById("baby").innerHTML = '<img src="' + imageLocation + '" class="img-fluid" alt="' + imageAltText + '">';
-        }
-        window.onload = function () {
-            var defaultArray = [
-                ["images/virtual-reality.jpg", "White Guys"],
-                ["images/itstudents3.jpg", "Other White Guys"]
-            ];
-            pictureLoad(defaultArray);
+            for(var i = 0; i < defaultArray.length; i++){
+                var imageLocation = defaultArray[i][0];
+                var imageAltText = defaultArray[i][1];
+                document.getElementById("picture" + i).innerHTML = '<img src="' + imageLocation + '" class="img-fluid" alt="' + imageAltText + '">';
+            }
         }
     </script>
 
