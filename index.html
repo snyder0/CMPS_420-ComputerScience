@@ -226,6 +226,13 @@
                 <img src="returnPictureAddress(0);" class="img-fluid" alt="...">
             </div>
         </div>
+
+
+        <div class="row">
+                <p class="col-sm-3" id="baby">
+                        <input type="button" onclick="returnPictureAddress(0)" value="Ryan's Button"></input>
+                </p>
+            </div>
     </div>
 
     <div class="container-fluid">
@@ -251,7 +258,36 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="/path/to/parallax.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <script>
+        //document.getElementById("baby").innerHTML = getRandomImage();
+        function getRandomImage() {
+            alert("Called");
+            return WhiteGuysWithGlasses[0];
+            
+        }
+
+
+
+
+
+
+
         var typed = new Typed('#typed', {
             stringsElement: '#typed-strings',
             typeSpeed: 100,
@@ -268,25 +304,25 @@
             }
             document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
         }
-
         var WhiteGuysWithGlasses = [
             "images/success_header.jpg",
             "images/virtual-reality.jpg",
             "images/itstudents3.jpg"
         ]
-
         function returnPictureAddress(arrayNumber){
-            document.write('<img src="images/success_header.jpg" class="img-fluid" alt="...">');
+            //document.write('<img src="images/success_header.jpg" class="img-fluid" alt="...">');
+            pictureChange("WhitePeople");
+            document.getElementById("baby").innerHTML = '<img src="images/success_header.jpg" class="img-fluid" alt="...">';
             //return WhiteGuysWithGlasses[arrayNumber];
         }
         function pictureChange(type){
             switch(type) {
-                case "":
+                case "WhitePeople":
                     //WhiteGuysWithGlasses
                     break;
-                case "":
+                case "BlackPeople":
                     break;
-                case"":
+                case"Glasses":
                     break;
                 case"":
                     break;
@@ -304,6 +340,17 @@
             returnPictureAddress(0);
         }
     </script>
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
