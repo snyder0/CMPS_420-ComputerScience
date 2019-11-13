@@ -221,6 +221,11 @@
                 <img src="./images/faculty/yang.jpg" class="img-fluid" alt="...">
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="returnPictureAddress(0);" class="img-fluid" alt="...">
+            </div>
+        </div>
     </div>
 
     <div class="container-fluid">
@@ -262,6 +267,41 @@
                 document.body.style.fontSize = "1.0em";
             }
             document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+        }
+
+        var WhiteGuysWithGlasses = [
+            "images/success_header.jpg",
+            "images/virtual-reality.jpg",
+            "images/itstudents3.jpg"
+        ]
+
+        function returnPictureAddress(arrayNumber){
+            document.write('<img src="images/success_header.jpg" class="img-fluid" alt="...">');
+            //return WhiteGuysWithGlasses[arrayNumber];
+        }
+        function pictureChange(type){
+            switch(type) {
+                case "":
+                    //WhiteGuysWithGlasses
+                    break;
+                case "":
+                    break;
+                case"":
+                    break;
+                case"":
+                    break;
+                case"":
+                    break;
+                case"":
+                    break;
+                case"":
+                    break;
+                default:
+
+            }
+        }
+        window.onload = function () {
+            returnPictureAddress(0);
         }
     </script>
 
