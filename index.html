@@ -195,6 +195,21 @@
 
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-sm-3" id="picture0">text
+            </div>
+            <div class="col-sm-3" id="picture1">is
+            </div>
+            <div class="col-sm-3" id="picture2">cool
+            </div>
+        </div>
+
+        <div class="row">
+                <p class="col-sm-3" id="baby">
+                        <input type="button" onclick="pictureChange('WhitePeople')" value="Ryan's Button"></input>
+                </p>
+            </div>
     </div>
 
 
@@ -222,6 +237,22 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="/path/to/parallax.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <script>
         var typed = new Typed('#typed', {
             stringsElement: '#typed-strings',
@@ -239,7 +270,72 @@
             }
             document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
         }
+        function returnPictureAddress(arrayNumber){
+            //document.write('<img src="images/success_header.jpg" class="img-fluid" alt="...">');
+            //pictureChange("WhitePeople");
+            document.getElementById("baby").innerHTML = '<img src="images/success_header.jpg" class="img-fluid" alt="...">';
+            //return WhiteGuysWithGlasses[arrayNumber];
+        }
+
+        //Is used to change array that holds the pictures
+        function pictureChange(type){
+            var defaultArray = [
+                ["images/virtual-reality.jpg", "White Guys"],
+                ["images/success_header.jpg", "White Guy"],
+                ["images/itstudents3.jpg", "Other White Guys"],
+
+            ];
+            var WhiteGuysWithGlasses = [
+                ["images/success_header.jpg", "White Guy"],
+                ["images/virtual-reality.jpg", "White Guys"],
+                ["images/itstudents3.jpg", "Other White Guys"]
+            ];
+            switch(type) {
+                case "WhitePeople":
+                    //console.log(defaultArray[0]);
+                    for(var i = 0; i < defaultArray.length; i++){
+                        defaultArray[i] = WhiteGuysWithGlasses[i];
+                        pictureLoad(defaultArray);
+                    console.log(defaultArray[i]);
+                    }
+                    //WhiteGuysWithGlasses
+                    break;
+                case "BlackPeople":
+                    break;
+                case"Glasses":
+                    break;
+                case"":
+                    break;
+                case"":
+                    break;
+                case"":
+                    break;
+                case"":
+                    break;
+                default:
+
+            }
+        }
+        //Is used to load the pictures
+        function pictureLoad(defaultArray){
+            for(var i = 0; i < defaultArray.length; i++){
+                var imageLocation = defaultArray[i][0];
+                var imageAltText = defaultArray[i][1];
+                document.getElementById("picture" + i).innerHTML = '<img src="' + imageLocation + '" class="img-fluid" alt="' + imageAltText + '">';
+            }
+        }
     </script>
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
