@@ -47,6 +47,37 @@
     background-size: cover;
 }
 
+.parallax3 {
+    /* The image used */
+    background-image: url('../images/TheMatrix.jpg');
+    /* Full height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tile-border {
+    border: 2.5px solid white;
+}
+
+.highlight-title {
+    font-size: 24px;
+}
+
+.highlight-list {
+    font-size: 24px;
+}
+
+.tile-title {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
 .img-grid {
     padding: 0px;
 }
@@ -88,6 +119,16 @@
     display: block;
 }
 
+.green-btn {
+    background-color: #2C814D;
+    border-color: #2C814D;
+}
+
+.green-btn:hover {
+    background-color: #006633;
+    border-color: #2C814D;
+}
+
 .carousel .carousel-control {
     visibility: hidden;
 }
@@ -101,6 +142,7 @@
 }
 
 .footer {
+    height: 500px;
     background: #464646;
     color: white;
 }
