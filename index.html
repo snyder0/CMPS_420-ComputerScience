@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:onclick="http://www.w3.org/1999/xhtml">
 
 <head>
     <!-- Required meta tags -->
@@ -77,13 +77,53 @@
     </div>
 
     <div class="container mt-5">
+        <div class="col-sm-12 h-25 justify-content-center">
+            <div>
+                <h1>Welcome to Computer Science!</h1>
+            </div>
+        </div>
+        <div id="JumpToMe"></div>
+        <div class="container-fluid banner mt-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 img-grid tile-border">
+                    <a href="#JumpToMe"><img id="Robotics" src="./images/Hack-a-Thon.png" class="img-fluid" alt="..." onclick = centerTextChange("Robotics")></a>
+                    <h2 class="row justify-content-center">Robotics</h2>
 
-        <div class="row">
-            <div class="col-sm-12 h-25 justify-content-center">
-                <div>
-                    <h1>Welcome to Computer Science!</h1>
+                </div>
+                <div class="col-sm-4 img-grid tile-border">
+                    <a href="#JumpToMe"><img src="./images/student-code.jpg" class="img-fluid" alt="..." onclick = centerTextChange("WebDesign")></a>
+                    <h2 class="row justify-content-center">Web Design</h2>
+                </div>
+                <div class="col-sm-4 img-grid tile-border">
+                    <a href="#JumpToMe"><img src="./images/current-students-international.jpg" class="img-fluid" alt="..." onclick = centerTextChange("SoftwareDesign")></a>
+                    <h2 class="row justify-content-center">Software Design</h2>
                 </div>
             </div>
+        </div>
+
+        <div class="row justify-content-center" width="vw20">
+            <p id="ReplacementText">This is the robotics text</p>
+        </div>
+
+        <div class="container-fluid banner mt-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 img-grid tile-border">
+                    <a href="#JumpToMe"><img src="./images/Hack-a-Thon.png" class="img-fluid" alt="..." onclick=centerTextChange("VR")></a>
+                    <h2 class="row justify-content-center">Virtual Reality</h2>
+
+                </div>
+                <div class="col-sm-4 img-grid tile-border">
+                    <a href="#JumpToMe"><img src="./images/student-code.jpg" class="img-fluid" alt="..." onclick=centerTextChange("ACM") ></a>
+                    <h2 class="row justify-content-center">ACM</h2>
+                </div>
+                <div class="col-sm-4 img-grid tile-border">
+                    <a href="#JumpToMe"><img src="./images/current-students-international.jpg" class="img-fluid" alt="..." onclick=centerTextChange("Income")></a>
+                    <h2 class="row justify-content-center">Income</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-sm-4 mt-5">
 
                 <div class="card">
@@ -292,8 +332,8 @@
 
             ];
             var WhiteGuysWithGlasses = [
-                ["images/success_header.jpg", "White Guy"],
                 ["images/virtual-reality.jpg", "White Guys"],
+                ["images/success_header.jpg", "White Guy"],
                 ["images/itstudents3.jpg", "Other White Guys"]
             ];
             switch(type) {
@@ -301,7 +341,7 @@
                     //console.log(defaultArray[0]);
                     for(var i = 0; i < defaultArray.length; i++){
                         defaultArray[i] = WhiteGuysWithGlasses[i];
-                        pictureLoad(defaultArray);
+                        pictureLoad(defaultArray, "Robotics");
                     console.log(defaultArray[i]);
                     }
                     //WhiteGuysWithGlasses
@@ -323,11 +363,53 @@
             }
         }
         //Is used to load the pictures
-        function pictureLoad(defaultArray){
+        function pictureLoad(defaultArray,TextToChangeTo){
+            //<img src="./images/Hack-a-Thon.png" class="img-fluid" alt="..." onclick=centerTextChange("VR")>
             for(var i = 0; i < defaultArray.length; i++){
                 var imageLocation = defaultArray[i][0];
                 var imageAltText = defaultArray[i][1];
-                document.getElementById("picture" + i).innerHTML = '<img src="' + imageLocation + '" class="img-fluid" alt="' + imageAltText + '">';
+                document.getElementById("picture" + i).innerHTML = '<img src="' + imageLocation + '" class="img-fluid" alt="' + imageAltText + '" onclick=centerTextChange("' + TextToChangeTo + '")>';
+            }
+        }
+
+        function centerTextChange(changeTo){
+            var ActualText = ["This is the Robotic Text",
+                "This is the Web Design Text",
+                "This is the Software Design Text",
+                "This is the VR Text",
+                "This is the ACM Text",
+                "This is the Income Text",
+            "Lorem ipsum dolor sit amet, te vide rebum sed, vis nihil adversarium definitionem ei. Ius justo accusam ne, legimus delicata patrioque id mei. Sit an persius dolorem. Eos ex viris deserunt vituperata, ut quo aperiri facilis splendide, cum ex putant hendrerit maiestatis. Id melius aliquando vim, pri dolorum expetenda ne, fugit exerci usu an. At qui ferri qualisque, dolore explicari neglegentur sit an.\n" +
+            "\n" +
+            "Harum eruditi eam an. Clita verterem quo ad, an quo quodsi inimicus consulatu, falli legere aperiam no usu. Ei nec eligendi instructior. Veri definitionem mel an, ad his tota intellegam. Purto debitis appetere an sed, vim eu audiam electram mnesarchum. Modo wisi hendrerit ne usu, liber menandri no sit.\n" +
+            "\n" +
+            "Tempor pertinax his ad. Eam torquatos adversarium concludaturque ea. Sanctus appareat ut vel, in eam harum adolescens inciderint. An sit veri tacimates percipitur, per enim hinc menandri te. His labore nemore corpora ut, timeam placerat eum cu. Cu nec munere luptatum consetetur. Sed no eius regione, an sonet animal pri, ei mei quas habemus albucius.\n" +
+            "\n" +
+            "Quem vocent usu ne. Has singulis mediocritatem ex, velit postulant pertinacia quo ex, vix ei legere saperet prodesset. Est docendi corrumpit interpretaris ei, usu ei justo noster atomorum, te case omnis quo. Ubique delicata similique ei nam. Pri id fuisset postulant argumentum, prodesset posidonium omittantur mea no, cum unum animal ei. Cu his dictas facilisi, paulo iudico placerat no est.\n" +
+            "\n" +
+            "Hinc veri utamur pro ex. Mea fuisset mediocrem gloriatur id. At quod ipsum tincidunt sit, id dolorum explicari abhorreant mea. Eos volumus dolores praesent ut, his ad omnes quodsi recusabo. Vis ea viris maluisset, eu quo libris quidam. Ut mel omnes volumus omnesque. Eu eos minim timeam."];
+            //ReplacementText
+            switch(changeTo) {
+                case"Robotics":
+                    document.getElementById("ReplacementText").innerText = ActualText[0];
+                    break;
+                case"WebDesign":
+                    document.getElementById("ReplacementText").innerText = ActualText[1];
+                    break;
+                case"SoftwareDesign":
+                    document.getElementById("ReplacementText").innerText = ActualText[6];
+                    break;
+                case"VR":
+                    document.getElementById("ReplacementText").innerText = ActualText[3];
+                    break;
+                case"ACM":
+                    document.getElementById("ReplacementText").innerText = ActualText[4];
+                    break;
+                case"Income":
+                    document.getElementById("ReplacementText").innerText = ActualText[5];
+                    break;
+                default:
+
             }
         }
     </script>
