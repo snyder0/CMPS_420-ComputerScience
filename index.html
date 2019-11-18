@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/main.css">
 
     <title>Computer Science</title>
-    <button onclick="resizeText(2)">Increase Text</button>
-    <button onclick="resizeText(-2)"> Decrease Text</button>
+<!--    <button onclick="resizeText(2)">Increase Text</button>-->
+<!--    <button onclick="resizeText(-2)"> Decrease Text</button>-->
 </head>
 
 <body>
@@ -58,8 +58,8 @@
                 aA
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" style="width: 1px" href="#">+</a>
-                <a class="dropdown-item" style="width: 1px" href="#">-</a>
+                <a class="dropdown-item" onclick="resizeText(2)" style="width: 1px" href="#">+</a>
+                <a class="dropdown-item" onclick="resizeText(-2)" style="width: 1px" href="#">-</a>
             </div>
         </div>
     </nav>
@@ -87,7 +87,6 @@
     </div>
 
     <div class="container mt-5">
-        <div id="JumpToMe"></div>
         <div class="row">
             <div class="col-md-4 mt-2">
                 <div class="card shadow bg-white rounded h-100">
@@ -159,21 +158,22 @@
         </div>
 
         <div class="container-fluid banner mt-5">
+            <div id="JumpToMe"></div>
             <div class="row justify-content-center">
                 <div class="col-sm-4 img-grid tile-border">
                     <h2 class="row justify-content-center">Robotics</h2>
-                    <img id="Robotics" src="./images/Hack-a-Thon.png" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('Robotics')">
+                    <a href="#JumpToMe"><img id="Robotics" src="./images/Hack-a-Thon.png" class="img-thumbnail shadow" alt="..."
+                        onclick="centerTextChange('Robotics')"></a>
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
                     <h2 class="row justify-content-center">Web Design</h2>
-                    <img src="./images/student-code.jpg" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('WebDesign')">
+                    <a href="#JumpToMe"><img src="./images/student-code.jpg" class="img-thumbnail shadow" alt="..."
+                        onclick="centerTextChange('WebDesign')"></a>
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
                     <h2 class="row justify-content-center">Software Design</h2>
-                    <img src="./images/current-students-international.jpg" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('SoftwareDesign')">
+                    <a href="#JumpToMe"><img src="./images/current-students-international.jpg" class="img-thumbnail shadow" alt="..."
+                        onclick="centerTextChange('SoftwareDesign')"></a>
                 </div>
             </div>
             <div class="row justify-content-center mt-5">
@@ -187,19 +187,19 @@
             </div>
             <div class="row justify-content-center mt-5">
                 <div class="col-sm-4 img-grid tile-border">
-                    <img src="./images/Hack-a-Thon.png" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('VR')">
+                    <a href="#JumpToMe"><img src="./images/Hack-a-Thon.png" class="img-thumbnail shadow" alt="..."
+                        onclick="centerTextChange('VR')"></a>
                     <h2 class="row justify-content-center">Virtual Reality</h2>
 
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
-                    <img src="./images/student-code.jpg" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('ACM')">
+                    <a href="#JumpToMe"><img src="./images/student-code.jpg" class="img-thumbnail shadow" alt="..."
+                        onclick="centerTextChange('ACM')"></a>
                     <h2 class="row justify-content-center">ACM</h2>
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
-                    <img src="./images/current-students-international.jpg" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('Income')">
+                    <a href="#JumpToMe"><img src="./images/current-students-international.jpg" class="img-thumbnail shadow" alt="..."
+                        onclick="centerTextChange('Income')"></a>
                     <h2 class="row justify-content-center">Income</h2>
                 </div>
             </div>
