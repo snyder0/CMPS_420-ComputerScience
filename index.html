@@ -23,7 +23,7 @@
             <div class="row">
                 <div class="navbar-header col align-self-start">
                     <a class="navbar-brand" href="http://www.southeastern.edu">
-                        <img src="./images/southeastern-logo.png"
+                        <img id="MainBackground" src="./images/southeastern-logo.png"
                             alt="Southeastern Louisiana University, Hammond Louisiana" width="320" class="">
                     </a>
                 </div>
@@ -163,17 +163,17 @@
             <div class="row justify-content-center">
                 <div class="col-sm-4 img-grid tile-border">
                     <h2 class="row justify-content-center">Robotics</h2>
-                    <a href="#JumpToMe"><img id="Robotics" src="./images/robotics.jpg" class="img-thumbnail shadow" alt="..."
+                    <a href="#JumpToMe"><img id="sixImage1" src="./images/robotics.jpg" class="img-thumbnail shadow" alt="..."
                         onclick="centerTextChange('Robotics')"></a>
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
                     <h2 class="row justify-content-center">Web Design</h2>
-                    <a href="#JumpToMe"><img src="./images/student-code.jpg" class="img-thumbnail shadow" alt="..."
+                    <a href="#JumpToMe"><img id="sixImage2" src="./images/student-code.jpg" class="img-thumbnail shadow" alt="..."
                         onclick="centerTextChange('WebDesign')"></a>
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
                     <h2 class="row justify-content-center">Software Design</h2>
-                    <a href="#JumpToMe"><img src="./images/sw-dev.jpg" class="img-thumbnail shadow" alt="..."
+                    <a href="#JumpToMe"><img id="sixImage3" src="./images/sw-dev.jpg" class="img-thumbnail shadow" alt="..."
                         onclick="centerTextChange('SoftwareDesign')"></a>
                 </div>
             </div>
@@ -188,18 +188,18 @@
             </div>
             <div class="row justify-content-center mt-5">
                 <div class="col-sm-4 img-grid tile-border">
-                    <a href="#JumpToMe"><img src="./images/VR.png" class="img-thumbnail shadow" alt="..."
+                    <a href="#JumpToMe"><img id="sixImage4" src="./images/VR.png" class="img-thumbnail shadow" alt="..."
                         onclick="centerTextChange('VR')"></a>
                     <h2 class="row justify-content-center">Virtual Reality</h2>
 
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
-                    <a href="#JumpToMe"><img src="./images/students.jpg" class="img-thumbnail shadow" alt="..."
+                    <a href="#JumpToMe"><img id="sixImage5" src="./images/students.jpg" class="img-thumbnail shadow" alt="..."
                         onclick="centerTextChange('ACM')"></a>
                     <h2 class="row justify-content-center">ACM/WIT</h2>
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
-                    <a href="#JumpToMe"><img src="./images/income.png" class="img-thumbnail shadow" alt="..."
+                    <a href="#JumpToMe"><img id="sixImage6" src="./images/income.png" class="img-thumbnail shadow" alt="..."
                         onclick="centerTextChange('Income')"></a>
                     <h2 class="row justify-content-center">Income</h2>
                 </div>
@@ -220,7 +220,7 @@
                     <div class="card-header">
                         Degree Program
                     </div>
-                    <img src="./images/TheMatrix.jpg" class="card-img-top" alt="computer systems analyst">
+                    <img id="Scientific"src="./images/TheMatrix.jpg" class="card-img-top" alt="computer systems analyst">
                     <div class="card-body">
                         <div class="col-sm-6">
 
@@ -240,7 +240,7 @@
                     <div class="card-header">
                         Degree Program
                     </div>
-                    <img src="./images/breadboard.jpg" class="card-img-top" alt="computer systems analyst"
+                    <img id="PreMBA" src="./images/breadboard.jpg" class="card-img-top" alt="computer systems analyst"
                         style="height: 12.2rem;">
                     <div class="card-body">
                         <h5 class="card-title">Pre-MBA</h5>
@@ -258,7 +258,7 @@
                     <div class="card-header">
                         Degree Program
                     </div>
-                    <img src="./images/Computer_Systems_Analyst.jpg" class="card-img-top"
+                    <img id="IT" src="./images/Computer_Systems_Analyst.jpg" class="card-img-top"
                         alt="computer systems analyst">
                     <div class="card-body">
                         <h5 class="card-title">Information Technology</h5>
@@ -390,6 +390,7 @@
                     </div>
                 </div>
             </div>
+            <input type="button" onclick="memeItUp()" value="Meme it up"></input>
         </div>
     </div>
 
@@ -482,45 +483,80 @@
             document.getElementById("baby").innerHTML = '<img src="images/success_header.jpg" class="img-fluid" alt="...">';
             //return WhiteGuysWithGlasses[arrayNumber];
         }
-
         //Is used to change array that holds the pictures
-        function pictureChange(type) {
-            var defaultArray = [
-                ["images/virtual-reality.jpg", "White Guys"],
-                ["images/success_header.jpg", "White Guy"],
-                ["images/itstudents3.jpg", "Other White Guys"],
-
-            ];
-            var WhiteGuysWithGlasses = [
-                ["images/virtual-reality.jpg", "White Guys"],
-                ["images/success_header.jpg", "White Guy"],
-                ["images/itstudents3.jpg", "Other White Guys"]
-            ];
-            switch (type) {
-                case "WhitePeople":
-                    //console.log(defaultArray[0]);
-                    for (var i = 0; i < defaultArray.length; i++) {
-                        defaultArray[i] = WhiteGuysWithGlasses[i];
-                        pictureLoad(defaultArray, "Robotics");
-                        console.log(defaultArray[i]);
-                    }
-                    //WhiteGuysWithGlasses
-                    break;
-                case "BlackPeople":
-                    break;
-                case "Glasses":
-                    break;
-                case "":
-                    break;
-                case "":
-                    break;
-                case "":
-                    break;
-                case "":
-                    break;
-                default:
-
-            }
+        // function pictureChange(type) {
+        //     var defaultArray = [
+        //         ["images/virtual-reality.jpg", "White Guys"],
+        //         ["images/success_header.jpg", "White Guy"],
+        //         ["images/itstudents3.jpg", "Other White Guys"],
+        //
+        //     ];
+        //     var MemePictures = [
+        //         ["images/virtual-reality.jpg", "White Guys"],
+        //         ["images/success_header.jpg", "White Guy"],
+        //         ["images/itstudents3.jpg", "Other White Guys"]
+        //     ];
+        //     switch (type) {
+        //         case "WhitePeople":
+        //             //console.log(defaultArray[0]);
+        //             for (var i = 0; i < defaultArray.length; i++) {
+        //                 defaultArray[i] = WhiteGuysWithGlasses[i];
+        //                 pictureLoad(defaultArray, "Robotics");
+        //                 console.log(defaultArray[i]);
+        //             }
+        //             //WhiteGuysWithGlasses
+        //             break;
+        //         case "BlackPeople":
+        //             break;
+        //         case "Glasses":
+        //             break;
+        //         case "":
+        //             break;
+        //         case "":
+        //             break;
+        //         case "":
+        //             break;
+        //         case "":
+        //             break;
+        //         default:
+        //
+        //     }
+        // }
+        function memeItUp(){
+            var MemePictures = [
+                ["images/TopImage.jpg","Computer Science is a trap"],
+                ["images/Rick&Morty.jpg","Robots Pass butter"],
+                ["images/WebDev.jpg","Sometimes the best websites are made on the worst computers"],
+                ["images/Software.jpg","Sometimes you need a coffee in life"],
+                ["images/sunny3.jpg","Always looking for some VR with the Sunny Bois"],
+                ["images/WIT.jpg","It is not always what it seems"],
+                ["images/income.jpg", "The money was never the problem"],
+                ["images/ComputerScience.jpg","Puts the science in scientific"],
+                ["images/PreMBA.jpg","Yea, I went there"],
+                ["images/Information Tech.jpg","This is okay"]
+            ]
+            var TextChange = [
+                "Robotics",
+                "WebDesign",
+                "SoftwareDesign",
+                "VR",
+                "ACM",
+                "Income"
+            ]
+            document.getElementById("MainBackground").src = MemePictures[0][0];
+            //for(var i = 1;i <= 6;i++){
+            document.getElementById("sixImage1").src = MemePictures[1][0];
+            document.getElementById("sixImage2").src = MemePictures[2][0];
+            document.getElementById("sixImage3").src = MemePictures[3][0];
+            document.getElementById("sixImage4").src = MemePictures[4][0];
+            document.getElementById("sixImage5").src = MemePictures[5][0];
+            document.getElementById("sixImage6").src = MemePictures[6][0];
+            document.getElementById("Scientific").src = MemePictures[7][0];
+            document.getElementById("PreMBA").src = MemePictures[8][0];
+            document.getElementById("IT").src = MemePictures[9][0];
+                //document.getElementById("sixImage1").innerHTML = '<img src="' + MemePictures[1][0] + '" class="" alt="' + MemePictures[1][1] + '">';
+                    //'<img src="./images/robotics.jpg" class="img-thumbnail shadow" alt="..." onclick="centerTextChange('Robotics')">'
+            //}
         }
         //Is used to load the pictures
         function pictureLoad(defaultArray, TextToChangeTo) {
@@ -564,7 +600,8 @@
 
             }
         }
-    </script>
+        </script>
+
 </body>
 
 </html>
