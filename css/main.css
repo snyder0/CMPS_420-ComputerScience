@@ -139,6 +139,9 @@
     overflow: hidden;
 }
 
+.info-panel {
+    background-color: #E5E5E7;
+}
 
 .code {
     color: #212529 !important;
