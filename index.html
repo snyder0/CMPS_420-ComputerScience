@@ -52,6 +52,16 @@
                 </li>
             </ul>
         </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                aA
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" style="width: 1px" href="#">+</a>
+                <a class="dropdown-item" style="width: 1px" href="#">-</a>
+            </div>
+        </div>
     </nav>
     <div class="container-fluid">
         <div class="row justify-space-around">
@@ -86,16 +96,18 @@
         <div class="container-fluid banner mt-5">
             <div class="row justify-content-center">
                 <div class="col-sm-4 img-grid tile-border">
-                    <a href="#JumpToMe"><img id="Robotics" src="./images/Hack-a-Thon.png" class="img-fluid" alt="..." onclick = centerTextChange("Robotics")></a>
+                    <a href="#JumpToMe"><img id="Robotics" src="./images/Hack-a-Thon.png" class="img-fluid shadow"
+                            alt="..." onclick="centerTextChange('Robotics')"></a>
                     <h2 class="row justify-content-center">Robotics</h2>
-
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
-                    <a href="#JumpToMe"><img src="./images/student-code.jpg" class="img-fluid" alt="..." onclick = centerTextChange("WebDesign")></a>
+                    <a href="#JumpToMe"><img src="./images/student-code.jpg" class="img-fluid shadow" alt="..."
+                            onclick="centerTextChange('WebDesign')"></a>
                     <h2 class="row justify-content-center">Web Design</h2>
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
-                    <a href="#JumpToMe"><img src="./images/current-students-international.jpg" class="img-fluid" alt="..." onclick = centerTextChange("SoftwareDesign")></a>
+                    <a href="#JumpToMe"><img src="./images/current-students-international.jpg" class="img-fluid shadow"
+                            alt="..." onclick="centerTextChange('SoftwareDesign')"></a>
                     <h2 class="row justify-content-center">Software Design</h2>
                 </div>
             </div>
@@ -108,16 +120,19 @@
         <div class="container-fluid banner mt-5">
             <div class="row justify-content-center">
                 <div class="col-sm-4 img-grid tile-border">
-                    <a href="#JumpToMe"><img src="./images/Hack-a-Thon.png" class="img-fluid" alt="..." onclick=centerTextChange("VR")></a>
+                    <a href="#JumpToMe"><img src="./images/Hack-a-Thon.png" class="img-fluid shadow" alt="..."
+                            onclick="centerTextChange('VR')"></a>
                     <h2 class="row justify-content-center">Virtual Reality</h2>
 
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
-                    <a href="#JumpToMe"><img src="./images/student-code.jpg" class="img-fluid" alt="..." onclick=centerTextChange("ACM") ></a>
+                    <a href="#JumpToMe"><img src="./images/student-code.jpg" class="img-fluid shadow" alt="..."
+                            onclick="centerTextChange('ACM')"></a>
                     <h2 class="row justify-content-center">ACM</h2>
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
-                    <a href="#JumpToMe"><img src="./images/current-students-international.jpg" class="img-fluid" alt="..." onclick=centerTextChange("Income")></a>
+                    <a href="#JumpToMe"><img src="./images/current-students-international.jpg" class="img-fluid shadow"
+                            alt="..." onclick="centerTextChange('Income')"></a>
                     <h2 class="row justify-content-center">Income</h2>
                 </div>
             </div>
@@ -125,58 +140,135 @@
 
         <div class="row">
             <div class="col-sm-4 mt-5">
-
-                <div class="card">
+                <div class="card shadow bg-white rounded h-100">
                     <div class="card-header">
                         Degree Program
                     </div>
+                    <img src="./images/TheMatrix.jpg" class="card-img-top" alt="computer systems analyst">
                     <div class="card-body">
-                           <div class="col-sm-6">
-                    
-                </div>
+                        <div class="col-sm-6">
+
+                        </div>
                         <h5 class="card-title">Scientific</h5>
-                        <p class="card-text">A “Scientific” concentration that provides a depth of knowledge in the fundamental topics of computer science and mathematics that will prepare graduates for graduate studies in computer science, a career in scientific research, or a career in software engineering and application development. </p>
-                        <a href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/cs_scientific_2019_2020.pdf" target="_blank" class="btn green-btn btn-primary">More Info</a>
+                        <p class="card-text">A “Scientific” concentration that provides a depth of knowledge in the
+                            fundamental topics of computer science and mathematics that will prepare graduates for
+                            graduate studies in computer science, a career in scientific research, or a career in
+                            software engineering and application development. </p>
+                        <a href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/cs_scientific_2019_2020.pdf"
+                            target="_blank" class="btn green-btn btn-primary">More Info</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 mt-5">
-                <div class="card ml-4">
+                <div class="card ml-4 card shadow bg-white rounded h-100">
                     <div class="card-header">
                         Degree Program
                     </div>
+                    <img src="./images/breadboard.jpg" class="card-img-top" alt="computer systems analyst"
+                        style="height: 12.2rem;">
                     <div class="card-body">
                         <h5 class="card-title">Pre-MBA</h5>
-                        <p class="card-text">A “Pre-MBA” concentration that provides a depth of knowledge in computer science but augments the program with business courses that will prepare graduates for graduate studies in business administration in addition to more traditional career paths for computer science graduates.</p>
-                        <a href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/cs_pre_mba_2019_2020.pdf" target="_blank" class="btn green-btn btn-primary">More Info</a>
+                        <p class="card-text">A “Pre-MBA” concentration that provides a depth of knowledge in computer
+                            science but augments the program with business courses that will prepare graduates for
+                            graduate studies in business administration in addition to more traditional career paths for
+                            computer science graduates.</p>
+                        <a href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/cs_pre_mba_2019_2020.pdf"
+                            target="_blank" class="btn green-btn btn-primary">More Info</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 mt-5">
-                <div class="card">
+                <div class="card card shadow bg-white rounded h-100">
                     <div class="card-header">
                         Degree Program
                     </div>
+                    <img src="./images/Computer_Systems_Analyst.jpg" class="card-img-top"
+                        alt="computer systems analyst">
                     <div class="card-body">
                         <h5 class="card-title">Information Technology</h5>
-                        <p class="card-text">The Bachelor of Science in Information Technology degree program features similar computer science coursework, but less math. It also includes an "Application Area" which allows student an opportunity to apply what they have learned to a specific discipline. The most current curriculum sheet can be found here.</p>
-                        <a href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/info_tech_2019_2020.pdf" target="_blank" class="btn green-btn btn-primary">More Info</a>
+                        <p class="card-text">The Bachelor of Science in Information Technology degree program features
+                            similar computer science coursework, but less math. It also includes an "Application Area"
+                            which allows student an opportunity to apply what they have learned to a specific
+                            discipline. The most current curriculum sheet can be found here.</p>
+                        <a href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/info_tech_2019_2020.pdf"
+                            target="_blank" class="btn green-btn btn-primary">More Info</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-sm-12">
-                <div class="card">
+            <div class="col-sm-6">
+                <div class="card card shadow bg-white rounded">
                     <div class="card-header">
                         Minors
                     </div>
+                    <img src="./images/header-server.jpg" class="card-img-top" alt="computer systems analyst">
                     <div class="card-body">
                         <h5 class="card-title">Minors</h5>
-                        <p class="card-text">The Computer Science minor consists of the following eighteen semester hours of course work in Computer Science: CMPS 161, CMPS 257 or MATH 223, CMPS 280, CMPS 285, CMPS 390 and three credits from CMPS 401, 411, 439, or 450.</p>
-                        <p class="card-text">The Information Technology minor consists of eighteen semester hours of course work in Computer Science: CMPS 161, 280, 285, 294 and six credits from CMPS 315, 329, 339, or 394.</p>
-                        <p class="card-text">The Computer Technology minor consists of eighteen semester hours of course work in Computer Science. CMPS 101, 110, 120 and three courses from: CMPS 204, 209, 210, 225, 233, 235, 333, and 335.</p>
+                        <p class="card-text">The Computer Science minor consists of the following eighteen semester
+                            hours of course work in Computer Science: CMPS 161, CMPS 257 or MATH 223, CMPS 280, CMPS
+                            285, CMPS 390 and three credits from CMPS 401, 411, 439, or 450.</p>
+                        <p class="card-text">The Information Technology minor consists of eighteen semester hours of
+                            course work in Computer Science: CMPS 161, 280, 285, 294 and six credits from CMPS 315, 329,
+                            339, or 394.</p>
+                        <p class="card-text">The Computer Technology minor consists of eighteen semester hours of course
+                            work in Computer Science. CMPS 101, 110, 120 and three courses from: CMPS 204, 209, 210,
+                            225, 233, 235, 333, and 335.</p>
                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row mb-4">
+                    <div class="col-sm-9">
+                        <div class="card card shadow bg-white rounded code-block">
+                            <div class="card-header">
+                                HTML
+                            </div>
+                            <div class="card-body">
+                                <pre><code>&lt;div&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/div&gt;
+                                        </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-sm-9 offset-md-3">
+                        <div class="card card shadow bg-white rounded code-block">
+                            <div class="card-header">
+                                CSS
+                            </div>
+                            <div class="card-body">
+                                <div id="typed-strings1">
+                                    <p>
+                                        <pre>
+                                            <code class="code">
+                                                &lt;p&gt;Sample text here...&lt;/p&gt;
+                                                &lt;p&gt;And another line of sample text here...&lt;/p&gt;
+                                            </code>
+                                        </pre>
+                                    </p>
+                                </div>
+                                <span id="typed1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="card card shadow bg-white rounded code-block">
+                            <div class="card-header">
+                                JavaScript
+                            </div>
+                            <div class="card-body">
+                                <pre><code>&lt;div&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/div&gt;
+                                        </code></pre>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,53 +276,42 @@
 
     </div>
 
-    <div class = "container mt-5">
-        <div class="row justify-content-center">
-            <h1>Kuo-Pao Yang's Robotic Class Presentations</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/fpL5IKaqVqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="container-fluid banner mt-5">
-        <div class="row justify-content-center">
-            <div class="col-sm-4 img-grid tile-border">
-                <a
-                    href="https://www.southeastern.edu/acad_research/depts/comp_sci/student_success/scholarships/index.html">
-                    <img src="./images/Hack-a-Thon.png" class="img-fluid" alt="...">
-                </a>
-
-            </div>
-            <div class="col-sm-4 img-grid tile-border">
-                <img src="./images/student-code.jpg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-sm-4 img-grid tile-border">
-                <img src="./images/current-students-international.jpg" class="img-fluid" alt="...">
-            </div>
-            <!-- <div class="col-sm-3 img-grid">
-                <img src="./images/college-student.jpg" class="img-fluid" alt="..."/college-student.jpg
-            </div> -->
-        </div>
+    <div class="container mt-5">
         <div class="row">
-            <div class="col-sm-12">
-                <!-- <div class="parallax3"></div> -->
-            </div>
-        </div>
-    </div>
+            <div class="col-md-4">
+                <div class="card shadow bg-white rounded h-100">
+                    <div class="card-header">
+                        Department Highlights
+                    </div>
+                    <div class="card-body">
+                        <ul class="highlight-list">
+                            <li>Offers concentrations with an emphasis on scientific, applied, and business.</li>
+                            <br />
+                            <li>2,000 IT jobs from private-public partnerships for our graduates.</li>
+                            <br />
+                            <li>Graduates have an average starting salary of over $52,000.</li>
+                            <br />
+                            <li>Offers a Masters Degree in Integrated Science and Technology with computer science and
+                                information technology concentrations.</li>
+                                <br />
+                            <li>Provides opportunities to connect with faculty for undergraduate research.</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <div class="container-fluid">
-        <div class="row section-grey">
-            <!-- <div class="col-sm-6">
-                    <img src="images/carousel/lab.jpg" />
-                </div> -->
-            <div class="col-sm-12">
-                <h2 class="highlight-title">Department Highlights</h2>
-                <ul class="highlight-list">
-                    <li>Offers concentrations with an emphasis on scientific, applied, and business.</li>
-                    <li>2,000 IT jobs from private-public partnerships for our graduates.</li>
-                    <li>Graduates have an average starting salary of over $52,000.</li>
-                    <li>Offers a Masters Degree in Integrated Science and Technology with computer science and
-                        information technology concentrations.</li>
-                    <li>Provides opportunities to connect with faculty for undergraduate research.</li>
-                </ul>
+
+            </div>
+            <div class="col-md-8">
+                <div class="card card shadow bg-white rounded h-100">
+                    <div class="card-header">
+                        Professor Yang's Robotic Class Presentations
+                    </div>
+                    <div class="card-body">
+                        <iframe class="mt-2" width="560" height="315" src="https://www.youtube.com/embed/fpL5IKaqVqM" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            style="height: 23rem;width: 100%;" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -252,10 +333,10 @@
         </div>
 
         <div class="row">
-                <p class="col-sm-3" id="baby">
-                        <input type="button" onclick="pictureChange('WhitePeople')" value="Ryan's Button"></input>
-                </p>
-            </div>
+            <p class="col-sm-3" id="baby">
+                <input type="button" onclick="pictureChange('WhitePeople')" value="Ryan's Button"></input>
+            </p>
+        </div>
     </div>
 
 
@@ -283,30 +364,32 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="/path/to/parallax.js"></script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     <script>
-        var typed = new Typed('#typed', {
-            stringsElement: '#typed-strings',
+        // var typed = new Typed('#typed', {
+        //     stringsElement: '#typed-strings',
+        //     typeSpeed: 100,
+        //     backSpeed: 50,
+        //     backDelay: 700,
+        //     // loop: true,
+        // });
+
+        var typed1 = new Typed('#typed1', {
+            stringsElement: '#typed-strings1',
             typeSpeed: 100,
             backSpeed: 50,
             backDelay: 700,
-            //loop: true,
+            loop: true,
         });
+
+        // var typed2 = new Typed('#typed2', {
+        //     stringsElement: '#typed-strings2',
+        //     startDelay: 6500,
+        //     typeSpeed: 100,
+        //     backSpeed: 50,
+        //     backDelay: 700,
+        //     // loop: true,
+        // });
 
         $('.parallax-window').parallax({ imageSrc: './images/header-tablet.jpg' });
 
@@ -316,7 +399,7 @@
             }
             document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
         }
-        function returnPictureAddress(arrayNumber){
+        function returnPictureAddress(arrayNumber) {
             //document.write('<img src="images/success_header.jpg" class="img-fluid" alt="...">');
             //pictureChange("WhitePeople");
             document.getElementById("baby").innerHTML = '<img src="images/success_header.jpg" class="img-fluid" alt="...">';
@@ -324,7 +407,7 @@
         }
 
         //Is used to change array that holds the pictures
-        function pictureChange(type){
+        function pictureChange(type) {
             var defaultArray = [
                 ["images/virtual-reality.jpg", "White Guys"],
                 ["images/success_header.jpg", "White Guy"],
@@ -336,76 +419,76 @@
                 ["images/success_header.jpg", "White Guy"],
                 ["images/itstudents3.jpg", "Other White Guys"]
             ];
-            switch(type) {
+            switch (type) {
                 case "WhitePeople":
                     //console.log(defaultArray[0]);
-                    for(var i = 0; i < defaultArray.length; i++){
+                    for (var i = 0; i < defaultArray.length; i++) {
                         defaultArray[i] = WhiteGuysWithGlasses[i];
                         pictureLoad(defaultArray, "Robotics");
-                    console.log(defaultArray[i]);
+                        console.log(defaultArray[i]);
                     }
                     //WhiteGuysWithGlasses
                     break;
                 case "BlackPeople":
                     break;
-                case"Glasses":
+                case "Glasses":
                     break;
-                case"":
+                case "":
                     break;
-                case"":
+                case "":
                     break;
-                case"":
+                case "":
                     break;
-                case"":
+                case "":
                     break;
                 default:
 
             }
         }
         //Is used to load the pictures
-        function pictureLoad(defaultArray,TextToChangeTo){
+        function pictureLoad(defaultArray, TextToChangeTo) {
             //<img src="./images/Hack-a-Thon.png" class="img-fluid" alt="..." onclick=centerTextChange("VR")>
-            for(var i = 0; i < defaultArray.length; i++){
+            for (var i = 0; i < defaultArray.length; i++) {
                 var imageLocation = defaultArray[i][0];
                 var imageAltText = defaultArray[i][1];
                 document.getElementById("picture" + i).innerHTML = '<img src="' + imageLocation + '" class="img-fluid" alt="' + imageAltText + '" onclick=centerTextChange("' + TextToChangeTo + '")>';
             }
         }
 
-        function centerTextChange(changeTo){
+        function centerTextChange(changeTo) {
             var ActualText = ["This is the Robotic Text",
                 "This is the Web Design Text",
                 "This is the Software Design Text",
                 "This is the VR Text",
                 "This is the ACM Text",
                 "This is the Income Text",
-            "Lorem ipsum dolor sit amet, te vide rebum sed, vis nihil adversarium definitionem ei. Ius justo accusam ne, legimus delicata patrioque id mei. Sit an persius dolorem. Eos ex viris deserunt vituperata, ut quo aperiri facilis splendide, cum ex putant hendrerit maiestatis. Id melius aliquando vim, pri dolorum expetenda ne, fugit exerci usu an. At qui ferri qualisque, dolore explicari neglegentur sit an.\n" +
-            "\n" +
-            "Harum eruditi eam an. Clita verterem quo ad, an quo quodsi inimicus consulatu, falli legere aperiam no usu. Ei nec eligendi instructior. Veri definitionem mel an, ad his tota intellegam. Purto debitis appetere an sed, vim eu audiam electram mnesarchum. Modo wisi hendrerit ne usu, liber menandri no sit.\n" +
-            "\n" +
-            "Tempor pertinax his ad. Eam torquatos adversarium concludaturque ea. Sanctus appareat ut vel, in eam harum adolescens inciderint. An sit veri tacimates percipitur, per enim hinc menandri te. His labore nemore corpora ut, timeam placerat eum cu. Cu nec munere luptatum consetetur. Sed no eius regione, an sonet animal pri, ei mei quas habemus albucius.\n" +
-            "\n" +
-            "Quem vocent usu ne. Has singulis mediocritatem ex, velit postulant pertinacia quo ex, vix ei legere saperet prodesset. Est docendi corrumpit interpretaris ei, usu ei justo noster atomorum, te case omnis quo. Ubique delicata similique ei nam. Pri id fuisset postulant argumentum, prodesset posidonium omittantur mea no, cum unum animal ei. Cu his dictas facilisi, paulo iudico placerat no est.\n" +
-            "\n" +
-            "Hinc veri utamur pro ex. Mea fuisset mediocrem gloriatur id. At quod ipsum tincidunt sit, id dolorum explicari abhorreant mea. Eos volumus dolores praesent ut, his ad omnes quodsi recusabo. Vis ea viris maluisset, eu quo libris quidam. Ut mel omnes volumus omnesque. Eu eos minim timeam."];
+                "Lorem ipsum dolor sit amet, te vide rebum sed, vis nihil adversarium definitionem ei. Ius justo accusam ne, legimus delicata patrioque id mei. Sit an persius dolorem. Eos ex viris deserunt vituperata, ut quo aperiri facilis splendide, cum ex putant hendrerit maiestatis. Id melius aliquando vim, pri dolorum expetenda ne, fugit exerci usu an. At qui ferri qualisque, dolore explicari neglegentur sit an.\n" +
+                "\n" +
+                "Harum eruditi eam an. Clita verterem quo ad, an quo quodsi inimicus consulatu, falli legere aperiam no usu. Ei nec eligendi instructior. Veri definitionem mel an, ad his tota intellegam. Purto debitis appetere an sed, vim eu audiam electram mnesarchum. Modo wisi hendrerit ne usu, liber menandri no sit.\n" +
+                "\n" +
+                "Tempor pertinax his ad. Eam torquatos adversarium concludaturque ea. Sanctus appareat ut vel, in eam harum adolescens inciderint. An sit veri tacimates percipitur, per enim hinc menandri te. His labore nemore corpora ut, timeam placerat eum cu. Cu nec munere luptatum consetetur. Sed no eius regione, an sonet animal pri, ei mei quas habemus albucius.\n" +
+                "\n" +
+                "Quem vocent usu ne. Has singulis mediocritatem ex, velit postulant pertinacia quo ex, vix ei legere saperet prodesset. Est docendi corrumpit interpretaris ei, usu ei justo noster atomorum, te case omnis quo. Ubique delicata similique ei nam. Pri id fuisset postulant argumentum, prodesset posidonium omittantur mea no, cum unum animal ei. Cu his dictas facilisi, paulo iudico placerat no est.\n" +
+                "\n" +
+                "Hinc veri utamur pro ex. Mea fuisset mediocrem gloriatur id. At quod ipsum tincidunt sit, id dolorum explicari abhorreant mea. Eos volumus dolores praesent ut, his ad omnes quodsi recusabo. Vis ea viris maluisset, eu quo libris quidam. Ut mel omnes volumus omnesque. Eu eos minim timeam."];
             //ReplacementText
-            switch(changeTo) {
-                case"Robotics":
+            switch (changeTo) {
+                case "Robotics":
                     document.getElementById("ReplacementText").innerText = ActualText[0];
                     break;
-                case"WebDesign":
+                case "WebDesign":
                     document.getElementById("ReplacementText").innerText = ActualText[1];
                     break;
-                case"SoftwareDesign":
+                case "SoftwareDesign":
                     document.getElementById("ReplacementText").innerText = ActualText[6];
                     break;
-                case"VR":
+                case "VR":
                     document.getElementById("ReplacementText").innerText = ActualText[3];
                     break;
-                case"ACM":
+                case "ACM":
                     document.getElementById("ReplacementText").innerText = ActualText[4];
                     break;
-                case"Income":
+                case "Income":
                     document.getElementById("ReplacementText").innerText = ActualText[5];
                     break;
                 default:
@@ -413,18 +496,6 @@
             }
         }
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>

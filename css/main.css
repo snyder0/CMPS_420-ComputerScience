@@ -72,7 +72,8 @@
 }
 
 .highlight-list {
-    font-size: 24px;
+    font-size: 16px;
+    padding-left: 10px;
 }
 
 .tile-title {
@@ -131,6 +132,20 @@
 .green-btn:hover {
     background-color: #006633;
     border-color: #2C814D;
+}
+
+.code-block {
+    height: 10rem;
+    overflow: hidden;
+}
+
+
+.code {
+    color: #212529 !important;
+}
+
+.background {
+    height: 20rem;
 }
 
 .carousel .carousel-control {
