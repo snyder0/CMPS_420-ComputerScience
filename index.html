@@ -98,7 +98,8 @@
                     <div class="card-body">
                         <div class="card text-justify">
                             <div class="card-body info-panel">
-                                <img class="img-fluid mb-3" src="./images/carousel/CmpsBuilding.jpg" alt="Computer Science Building">
+                                <img class="img-fluid mb-3" src="./images/carousel/CmpsBuilding.jpg"
+                                    alt="Computer Science Building">
                                 <h4>Contact Information</h4>
                                 <p>
                                     Department of Computer Science
@@ -225,8 +226,10 @@
                     <div class="card-header">
                         Degree Program
                     </div>
-                    <a target="_blank" href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/cs_scientific_2019_2020.pdf">
-                    <img id="Scientific"src="./images/TheMatrix.jpg" class="card-img-top" alt="computer systems analyst"></a>
+                    <a target="_blank"
+                        href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/cs_scientific_2019_2020.pdf">
+                        <img id="Scientific" src="./images/TheMatrix.jpg" class="card-img-top"
+                            alt="computer systems analyst"></a>
                     <div class="card-body info-panel">
                         <div class="col-sm-6">
 
@@ -246,8 +249,10 @@
                     <div class="card-header">
                         Degree Program
                     </div>
-                    <a target="_blank" href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/cs_pre_mba_2019_2020.pdf">
-                        <img id="PreMBA" src="./images/breadboard.jpg" class="card-img-top" alt="computer systems analyst" style="height: 12.2rem;"></a>
+                    <a target="_blank"
+                        href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/cs_pre_mba_2019_2020.pdf">
+                        <img id="PreMBA" src="./images/breadboard.jpg" class="card-img-top"
+                            alt="computer systems analyst" style="height: 12.2rem;"></a>
                     <div class="card-body info-panel">
                         <h5 class="card-title">Pre-MBA</h5>
                         <p class="card-text">A “Pre-MBA” concentration that provides a depth of knowledge in computer
@@ -264,9 +269,10 @@
                     <div class="card-header">
                         Degree Program
                     </div>
-                    <a target="_blank" href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/info_tech_2019_2020.pdf">
-                    <img id="IT" src="./images/Computer_Systems_Analyst.jpg" class="card-img-top"
-                        alt="computer systems analyst"></a>
+                    <a target="_blank"
+                        href="https://www.southeastern.edu/acad_research/depts/comp_sci/undergrad_studies/undergrad_degree/cmps/pdfs/info_tech_2019_2020.pdf">
+                        <img id="IT" src="./images/Computer_Systems_Analyst.jpg" class="card-img-top"
+                            alt="computer systems analyst"></a>
                     <div class="card-body info-panel">
                         <h5 class="card-title">Information Technology</h5>
                         <p class="card-text">The Bachelor of Science in Information Technology degree program features
@@ -401,22 +407,40 @@
     </div>
 
     <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-sm-12 footer">
-                <h1>This a Footer</h1>
-                <div class="footer_address_div">
-                    <ul id="menu"><li>Southeastern Louisiana University</li>
-                        <li>Hammond, Louisiana 70402</li>
-                        <li>1.800.222.7358</li>
-                        <li>&nbsp;</li>
-                        <li><a href="/contact/index.html">Contact</a></li>
-                        <li><a href="mailto:enrollmentservice@southeastern.edu">Questions or Comments</a></li>
-                        <li><a href="/resources/policies/index.html">University Policies&nbsp;and Procedures</a></li>
+
+        <div class="row footer">
+            <div class="mx-auto d-sm-flex">
+                <div class="col-sm-4 mt-5">
+                    <!-- <div class="footer_address_div"> -->
+                    <ul id="menu">
+                        <li>Southeastern Louisiana University</li>
+                        <li class="mt-3">Hammond, Louisiana 70402</li>
+                        <li class="mt-3">1.800.222.7358</li>
                     </ul>
-                    <ul id="menu" style="float: right;">
-                        <li><input type="button" onclick="memeItUp()" value="Meme it up" ></input></li>
-                        <li><input type="button" value="Un Meme it" onClick="window.location.reload();"></input></li>
-                    </ul>
+                </div>
+                <div class="col-sm-4 mt-5">
+                    <img src="./images/selu-logo.png" alt="Southeastern">
+                </div>
+                <!-- </div> -->
+                <div class="col-sm-4 mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul id="menu" style="float: right;">
+                                <li><a href="/contact/index.html">Contact</a></li>
+                                <li class="mt-3"><a href="mailto:enrollmentservice@southeastern.edu">Questions or Comments</a></li>
+                                <li class="mt-3"><a href="/resources/policies/index.html">University Policies&nbsp;and Procedures</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul id="menu" style="float: right;">
+                                <li class="mt-3"><input class="btn green-btn btn-primary" type="button" onclick="memeItUp()"
+                                        value="Meme it up"></input></li>
+                                <li class="mt-3"><input class="btn green-btn btn-primary" type="button" value="Un-Meme it"
+                                        onClick="window.location.reload();"></input></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -472,7 +496,7 @@
             document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
         }
 
-        function memeItUp(){
+        function memeItUp() {
             var MemePictures = [
                 ["images/TopImage.jpg", "Computer Science is a trap"],
                 ["images/Rick&Morty.jpg", "Robots Pass butter"],
