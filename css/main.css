@@ -168,3 +168,7 @@
     background: #464646;
     color: white;
 }
+
+#menu li{
+    list-style-type: none;
+}
