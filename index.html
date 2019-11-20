@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/main.css">
 
     <title>Computer Science</title>
-<!--    <button onclick="resizeText(2)">Increase Text</button>-->
-<!--    <button onclick="resizeText(-2)"> Decrease Text</button>-->
+    <!--    <button onclick="resizeText(2)">Increase Text</button>-->
+    <!--    <button onclick="resizeText(-2)"> Decrease Text</button>-->
 </head>
 
 <body>
@@ -30,28 +30,34 @@
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-dark secondary-navigation">
-        <a class="navbar-brand" href="#">Computer Science</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#cInfo">Computer Science information</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Programs">Degree Programs</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#under18">Minors</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Highlights">Highlights</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark secondary-navigation sticky-top">
+        <div class="mx-auto d-sm-flex">
+            <a class="navbar-brand" href="#">
+                <h4>Computer Science</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav text-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cInfo">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Programs">Degree Programs</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#under18">Minors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Highlights">Highlights</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <input type="button" onclick="memeItUp()" value="Meme it up"></input>
         <div class="dropdown">
@@ -93,8 +99,9 @@
             <div class="col-md-4 mt-2">
                 <div class="card shadow bg-white rounded h-100">
                     <div class="card-body">
-                        <div class="card">
+                        <div class="card text-justify">
                             <div class="card-body info-panel">
+                                <img class="img-fluid mb-3" src="./images/carousel/CmpsBuilding.jpg" alt="Computer Science Building">
                                 <h4>Contact Information</h4>
                                 <p>
                                     Department of Computer Science
@@ -113,7 +120,7 @@
                                     bcrother@southeastern.edu</p>
                             </div>
                         </div>
-                        <div class="card mt-5">
+                        <div class="card text-justify mt-4">
                             <div class="card-body info-panel">
                                 <h4>University Hours</h4>
                                 <p>
@@ -131,7 +138,7 @@
 
                 </div>
             </div>
-            <div class="col-md-8 mt-2">
+            <div class="col-md-8 mt-2 text-justify">
                 <h1>Welcome to Computer Science!</h1>
                 <p>The Department of Computer Science at Southeastern Louisiana University is committed to preparing
                     students to be nationally competitive both in the workforce and in graduate studies. We focus on
@@ -164,18 +171,18 @@
             <div class="row justify-content-center">
                 <div class="col-sm-4 img-grid tile-border">
                     <h2 class="row justify-content-center">Robotics</h2>
-                    <a href="#JumpToMe"><img id="sixImage1" src="./images/robotics.jpg" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('Robotics')"></a>
+                    <a href="#JumpToMe"><img id="sixImage1" src="./images/robotics.jpg" class="img-thumbnail shadow"
+                            alt="..." onclick="centerTextChange('Robotics')"></a>
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
                     <h2 class="row justify-content-center">Web Design</h2>
-                    <a href="#JumpToMe"><img id="sixImage2" src="./images/student-code.jpg" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('WebDesign')"></a>
+                    <a href="#JumpToMe"><img id="sixImage2" src="./images/student-code.jpg" class="img-thumbnail shadow"
+                            alt="..." onclick="centerTextChange('WebDesign')"></a>
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
                     <h2 class="row justify-content-center">Software Design</h2>
-                    <a href="#JumpToMe"><img id="sixImage3" src="./images/sw-dev.jpg" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('SoftwareDesign')"></a>
+                    <a href="#JumpToMe"><img id="sixImage3" src="./images/sw-dev.jpg" class="img-thumbnail shadow"
+                            alt="..." onclick="centerTextChange('SoftwareDesign')"></a>
                 </div>
             </div>
             <div class="row justify-content-center mt-5">
@@ -190,18 +197,18 @@
             <div class="row justify-content-center mt-5">
                 <div class="col-sm-4 img-grid tile-border">
                     <a href="#JumpToMe"><img id="sixImage4" src="./images/VR.png" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('VR')"></a>
+                            onclick="centerTextChange('VR')"></a>
                     <h2 class="row justify-content-center">Virtual Reality</h2>
 
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
-                    <a href="#JumpToMe"><img id="sixImage5" src="./images/students.jpg" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('ACM')"></a>
+                    <a href="#JumpToMe"><img id="sixImage5" src="./images/students.jpg" class="img-thumbnail shadow"
+                            alt="..." onclick="centerTextChange('ACM')"></a>
                     <h2 class="row justify-content-center">ACM/WIT</h2>
                 </div>
                 <div class="col-sm-4 img-grid tile-border">
-                    <a href="#JumpToMe"><img id="sixImage6" src="./images/income.png" class="img-thumbnail shadow" alt="..."
-                        onclick="centerTextChange('Income')"></a>
+                    <a href="#JumpToMe"><img id="sixImage6" src="./images/income.png" class="img-thumbnail shadow"
+                            alt="..." onclick="centerTextChange('Income')"></a>
                     <h2 class="row justify-content-center">Income</h2>
                 </div>
             </div>
@@ -221,7 +228,8 @@
                     <div class="card-header">
                         Degree Program
                     </div>
-                    <img id="Scientific"src="./images/TheMatrix.jpg" class="card-img-top" alt="computer systems analyst">
+                    <img id="Scientific" src="./images/TheMatrix.jpg" class="card-img-top"
+                        alt="computer systems analyst">
                     <div class="card-body">
                         <div class="col-sm-6">
 
@@ -281,7 +289,7 @@
                     </div>
                     <img src="./images/header-server.jpg" class="card-img-top" alt="computer systems analyst">
                     <div class="card-body">
-                        <h5 class="card-title">Minors</h5>
+                        <h5 class="card-title text-justify">Minors</h5>
                         <p class="card-text">The Computer Science minor consists of the following eighteen semester
                             hours of course work in Computer Science: CMPS 161, CMPS 257 or MATH 223, CMPS 280, CMPS
                             285, CMPS 390 and three credits from CMPS 401, 411, 439, or 450.</p>
@@ -522,18 +530,18 @@
         //
         //     }
         // }
-        function memeItUp(){
+        function memeItUp() {
             var MemePictures = [
-                ["images/TopImage.jpg","Computer Science is a trap"],
-                ["images/Rick&Morty.jpg","Robots Pass butter"],
-                ["images/WebDev.jpg","Sometimes the best websites are made on the worst computers"],
-                ["images/Software.jpg","Sometimes you need a coffee in life"],
-                ["images/sunny3.jpg","Always looking for some VR with the Sunny Bois"],
-                ["images/WIT.jpg","It is not always what it seems"],
+                ["images/TopImage.jpg", "Computer Science is a trap"],
+                ["images/Rick&Morty.jpg", "Robots Pass butter"],
+                ["images/WebDev.jpg", "Sometimes the best websites are made on the worst computers"],
+                ["images/Software.jpg", "Sometimes you need a coffee in life"],
+                ["images/sunny3.jpg", "Always looking for some VR with the Sunny Bois"],
+                ["images/WIT.jpg", "It is not always what it seems"],
                 ["images/income.jpg", "The money was never the problem"],
-                ["images/ComputerScience.jpg","Puts the science in scientific"],
-                ["images/PreMBA.jpg","Yea, I went there"],
-                ["images/Information Tech.jpg","This is okay"]
+                ["images/ComputerScience.jpg", "Puts the science in scientific"],
+                ["images/PreMBA.jpg", "Yea, I went there"],
+                ["images/Information Tech.jpg", "This is okay"]
             ]
             var TextChange = [
                 "Robotics",
@@ -554,8 +562,8 @@
             document.getElementById("Scientific").src = MemePictures[7][0];
             document.getElementById("PreMBA").src = MemePictures[8][0];
             document.getElementById("IT").src = MemePictures[9][0];
-                //document.getElementById("sixImage1").innerHTML = '<img src="' + MemePictures[1][0] + '" class="" alt="' + MemePictures[1][1] + '">';
-                    //'<img src="./images/robotics.jpg" class="img-thumbnail shadow" alt="..." onclick="centerTextChange('Robotics')">'
+            //document.getElementById("sixImage1").innerHTML = '<img src="' + MemePictures[1][0] + '" class="" alt="' + MemePictures[1][1] + '">';
+            //'<img src="./images/robotics.jpg" class="img-thumbnail shadow" alt="..." onclick="centerTextChange('Robotics')">'
             //}
         }
         //Is used to load the pictures
@@ -600,7 +608,7 @@
 
             }
         }
-        </script>
+    </script>
 
 </body>
 
