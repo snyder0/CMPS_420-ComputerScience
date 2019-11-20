@@ -164,7 +164,11 @@
 }
 
 .footer {
-    height: 200px;
+    height: 500px;
     background: #464646;
     color: white;
+}
+
+#menu li{
+    list-style-type: none;
 }
